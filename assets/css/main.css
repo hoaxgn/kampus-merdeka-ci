@@ -1,0 +1,90 @@
+
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+.tabs .indicator {
+  background-color: #0d47a1;
+}
+
+body {
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #fff;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+.input-field input[type=date]:focus+label,
+.input-field input[type=text]:focus+label,
+.input-field input[type=email]:focus+label,
+.input-field input[type=password]:focus+label {
+  color: #e91e63;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 2px solid #e91e63;
+  box-shadow: none;
+}
+.slider h2{
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 10);
+  margin-top: 150px;
+  font-family: Georgia;
+  
+
+}
+.slider h5 {
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 10);
+
+}
+.slider img {
+  
+  -webkit-filter: blur(1px); /* Chrome, Opera */
+    filter: blur(1px);
+}
+
+
+.program div{
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 10px;
+}
+
+.navbar-fixed {
+  position: absolute;z-index:999999999;
+  height: 70px;
+   overflow: hidden;
+      float: left;
+  background-color: rgba(0, 0, 0,  .6);
+
+}
+.nav-wrapper img{
+  width: 140px;
+  height: 70px;
+}
+/* Navbar transparant */
+.nav-transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+.nav-breadcrumbs-dark {
+  .breadcrumb {
+    color: rgba(0,0,0,0.5);
+  }
+  .breadcrumb:last-child {
+    color: rgba(0,0,0,1);
+  }
+  .breadcrumb:before {
+    color: rgba(0,0,0,0.2);
+  }
+}
+
