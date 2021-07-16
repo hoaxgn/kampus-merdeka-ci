@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/file_upload.css">
+    <script scr="js/script.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+        integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.dropdown-trigger');
+                M.Dropdown.init(elems, {
+                    hover: false,
+                    coverTrigger: false
+                }
+                );
+            });
+            document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    M.Slider.init(elems);
+  });
+            $(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
+  });
+        </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teknik Informatika</title>
+</head>
+
+<body id="home" class="">
+
+    <!-- Section: Follow -->
+
+    <section class="section grey white-text">
+      <div class="row">
+          <div class="col s12 left">
+              <a href="#" class="brand-logo "><img src="img/logo-kampus-merdeka.png">
+                </a>
+                <img src="img/avatar-11.png" alt="" class="dropdown-trigger right" data-target="dropdown2" style="width: 50px; margin-right: 50px; margin-top: 25px;">
+          </div>
+          <ul id='dropdown2' class='dropdown-content'>
+            <li><a href="#!">Account</a></li>
+            <li><a href="#!">Logout</a></li>
+        </ul>
+      </div>
+  </section>
+  <!-- Navbar -->
+  <div class="navbar">
+      <nav class=" #616161 grey lighten-1  black-text">
+
+        <div class="nav-wrapper">
+          <ul class="left ">
+              <li>
+                  <a href="index_dosen.html" class="black-text">Dashboard</a>
+              </li>
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Kegiatan Mahasiswa<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+    <li>
+        <a href="#program" class="black-text">Profil</a>
+    </li>
+</ul>
+<ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">Catatan Harian</a></li>
+    <li><a href="#!">Laporan Tengah</a></li>
+    <li><a href="#!">Laporan Akhir</a></li>
+    <li><a href="#!">Pengumuman</a></li>
+</ul>
+      </div>
+</div>
+
+  </nav>
+  </div>
+    </div>
+
+    </nav>
+    </div>
+
+    <!-- kotak kiri  -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/slider-2-1200.webp"> <!-- random image -->
+        </li>
+        <li>
+          <img src="img/slider-3-1200.webp"> <!-- random image -->
+        </li>
+      </ul>
+    </div>
+    <section id="isi" class="section section-isi scrollspy ">
+
+        <div class="row">
+
+            <div class="col s12 m3">
+                <div class="card ">
+                    <div class="card-content center">
+                        <img src="img/avatar-11.png">
+                        <br>
+                        <h5>Username</h5>
+                        <h6>Mahasiswa</h6>
+                        <br>
+                        <h6>1112225555</h6>
+                        <h6>Teknik Informatika</h6>
+                        <h6>Universitas Ibn Khaldun</h6>
+
+                    </div>
+                </div>
+            </div>
+
+            <section class="program center">
+                  <div class="row">
+                    <div class="col s12 m2">
+                      <div class="card-panel hoverable">
+                        <a href="Program_Wirausaha.html">
+                          <img src="img/icon-kegiatan-wirausaha.png" style="width: 60%;">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col s12 m2">
+                      <div class="card-panel hoverable">
+                        <a href="validasi_magang.html">
+                          <img src="img/icon-magang.png" style="width: 60%;">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col s12 m2">
+                      <div class="card-panel hoverable">
+                        <a href="#">
+                          <img src="img/icon-membangun-desa.png" style="width: 60%;">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col s12 m2">
+                      <div class="card-panel hoverable">
+                        <a href="#">
+                          <img src="img/icon-mengajar.png" style="width: 68%;">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col s12 m2">
+                      <div class="card-panel hoverable ">
+                        <a href="#">
+                          <img src="img/icon-penelitian.png" style="width: 60%;">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col s12 m2">
+                      <div class="card-panel hoverable">
+                        <a href="#">
+                          <img src="img/icon-proyek-kemanusiaan.png" style="width: 60%;">
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col s12 m2">
+                      <div class="card-panel hoverable">
+                        <a href="#">
+                          <img src="img/icon-studi-idependen.png" style="width: 60%;">
+                        </a>
+                      </div>
+                    </div>
+                  
+                    <div class="col s12 m2">
+                      <div class="card-panel hoverable">
+                        <a href="#">
+                          <img src="img/icon-pertukaran-pelajar.png" style="width: 60%;">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+              <div class="col s4 m3">
+                <div class="card ">
+                    <div class="card-content center-align">
+                        <h5 >Pengumuman</h5>
+                        <br>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iure hic cupiditate nostrum dicta obcaecati voluptatum optio dolores recusandae sunt.</span>
+        
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+const select = document.querySelectorAll('.select');
+M.FormSelect.init(select)
+
+</script>
+
+</body>
+
+</html>

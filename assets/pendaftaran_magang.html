@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/file_upload.css">
+    <script scr="/js/file_upload.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+        integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(elems, {
+                hover: false,
+                coverTrigger: false
+            }
+            );
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            M.Modal.init(elems);
+        });
+
+    </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teknik Informatika</title>
+</head>
+
+<body id="home" class="">
+
+    <!-- Section: Follow -->
+
+    <section class="section grey white-text">
+        <div class="row">
+            <div class="col s12 left">
+                <a href="#" class="brand-logo "><img src="img/logo-kampus-merdeka.png">
+                </a>
+                <img src="img/avatar-10.png" alt="" class="dropdown-trigger right" data-target="dropdown2"
+                    style="width: 50px; margin-right: 50px; margin-top: 25px;">
+            </div>
+            <ul id='dropdown2' class='dropdown-content'>
+                <li><a href="#!">Account</a></li>
+                <li><a href="#!">Logout</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Navbar -->
+    <div class="navbar">
+        <nav class=" #616161 grey lighten-1  black-text">
+
+            <div class="nav-wrapper">
+                <ul class="left ">
+                    <li>
+                        <a href="#home" class="black-text">Dashboard</a>
+                    </li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Pengajuan Usulan<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li>
+                        <a href="#program" class="black-text">Profil</a>
+                    </li>
+                </ul>
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!">Catatan Harian</a></li>
+                    <li><a href="#!">Laporan Tengah</a></li>
+                    <li><a href="#!">Laporan Akhir</a></li>
+                    <li><a href="#!">Pengumuman</a></li>
+                </ul>
+            </div>
+    </div>
+
+    </nav>
+    </div>
+    <!-- kotak kiri  -->
+
+
+
+    <div class="row container">
+
+        <section id="isi" class="section section-isi scrollspy ">
+
+            <div style="margin-left: 30px;">
+                <label>
+                    <h5 class="blue-text darken-3">Pendaftaran Magang Mahasiswa Merdeka Angkatan 1 2021</h5>
+                    <h6 class="black-text">Magang / praktik kerja</h6>
+
+                </label>
+            </div>
+        </section>
+        <h7 class="col s2" style="margin-top: 10px;">Dosen pembimbing :</h7>
+        <select class="browser-default col s3">
+            <option value="" disabled="" selected="">Pilih Dosen</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+
+
+
+        <div class="row" style="margin-left: 50px;">
+            <div class="col s12 m5">
+
+
+
+            </div>
+        </div>
+
+        <div class=" card blue section">
+            <h6 style="margin-left: 50px;" class=" white-text blue">Daftar Anggota
+            </h6>
+        </div>
+        <div class="row">
+            <div class="col s12 card grey lighten-3">
+
+                <table class="centered">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Lengkap</th>
+                            <th>Program Program Studi</th>
+                            <th>Aksi</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mytha Wulandari<br>
+                                181034558754<br>
+                                2018</td>
+                            <td>S1 - Teknik Informatika
+                                Ketua Kelompok</td>
+
+                            <td>
+                                <a class="waves-effect waves-light btn-small modal-trigger" href="#modal1"><i
+                                        class="material-icons">create</i></a>
+                                <a class="waves-effect waves-light btn-small modal-trigger red" href="#modal2"><i
+                                        class="material-icons">delete</i></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Muhamad Dzikri<br>
+                                181034558754<br>
+                                2018</td>
+                            <td>S1 - Teknik Informatika
+                                Ketua Kelompok</td>
+
+                            <td>
+                                <a class="waves-effect waves-light btn-small modal-trigger" href="#modal1"><i
+                                        class="material-icons">create</i></a>
+                                <a class="waves-effect waves-light btn-small modal-trigger red" href="#modal2"><i
+                                        class="material-icons">delete</i></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Muhamad Dzikri Fadhilah<br>
+                                181034558754<br>
+                                2018</td>
+                            <td>S1 - Teknik Informatika
+                                Ketua Kelompok</td>
+
+                            <td>
+                                <a class="waves-effect waves-light btn-small modal-trigger" href="#modal1"><i
+                                        class="material-icons">create</i></a>
+                                <a class="waves-effect waves-light btn-small modal-trigger red" href="#modal2"><i
+                                        class="material-icons">delete</i></a>
+                            </td>
+                        </tr>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content small">
+
+                                <h7 style="margin-top: 30px; margin-left: 0px;" class="col s2">NPM</h7>
+                                <div class="input-field col s9">
+                                    <input class="validate" type="text">
+                                    <label class="">NPM</label>
+
+                                </div>
+                                <a href="#" style="margin-top: 30px;" class="btn-small col s1 blue"><i
+                                        class="material-icons">search</i> Cek</a>
+
+
+                                <h7 style="margin-top: 30px; margin-bottom: 10px;" class="col s2">Nama Lengkap</h7>
+                                <div class="input-field col s9">
+                                    <input class="validate" type="text">
+                                    <label class="">Nama Lengkap</label>
+                                </div>
+
+                                <h7 style="margin-top: 10px;" class="col s2">Tahun Masuk</h7>
+
+                                <select class="browser-default col s9">
+                                    <option value="" disabled="" selected=""></option>
+                                </select>
+                                <h7 style="margin-top: 10px;" class="col s2">Program Studi</h7>
+
+                                <select class="browser-default col s9">
+                                    <option value="" disabled="" selected=""></option>
+                                </select>
+                                <br>
+                                <h7 style="margin-top: 10px;" class="col s2">Peran</h7>
+
+                                <select class="browser-default col s9">
+                                    <option value="" disabled="" selected=""></option>
+                                </select>
+                                <br>
+                                <div class="col 12 centered" style="margin-left: 50px;"></div>
+                                <center>
+                                    <a href="#!" class="modal-close waves-effect waves-light btn red">Kembali</a>
+                                    <a href="#!" class="modal-close waves-effect waves-light btn green">Simpan</a>
+                                </center>
+                            </div>
+
+
+
+                        </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content small">
+                    <p>Apa Anda Yakin?</p>
+                    <a href="#!" class="modal-close waves-effect waves-light btn-small blue">Ya</a>
+                    <a href="#!" class="modal-close waves-effect waves-light btn-small blue">Tidak</a>
+                </div>
+            </div>
+
+
+            </tbody>
+            </table>
+            <br>
+            <a style="margin-bottom: 15px;" href="#!"
+                class="modal-close waves-effect waves-light btn green black-text"><i style="margin-top: 2px;"
+                    class="material-icons dp1 black-text">add</i> | Tambah
+                Anggota</a>
+
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <center> <button style="margin-top: -30px;" class="btn-large centered blue"> Daftar</button></center>
+    </div>
+
+
+</body>
+
+</html>

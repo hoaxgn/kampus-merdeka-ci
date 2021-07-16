@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+        integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(elems, {
+                hover: false,
+                coverTrigger: false
+            }
+            );
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Teknik Informatika</title>
+</head>
+
+<body id="home" class="">
+
+    <!-- Section: Follow -->
+
+    <section class="section grey white-text">
+        <div class="row">
+            <div class="col s12 left">
+                <a href="#" class="brand-logo "><img src="img/logo-kampus-merdeka.png"></a>
+            </div>
+        </div>
+    </section>
+    <!-- Navbar -->
+    <div class="navbar">
+        <nav class=" #616161 grey lighten-1  black-text">
+
+            <div class="nav-wrapper">
+                <ul class="left ">
+                    <li>
+                        <a href="#home" class="black-text">Dashboard</a>
+                    </li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Kegiatan Mahasiswa<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li>
+                        <a href="#program" class="black-text">Profil</a>
+                    </li>
+                </ul>
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!">Catatan Harian</a></li>
+                    <li><a href="#!">Laporan Akhir</a></li>
+                    <li><a href="#!">Pengumuman</a></li>
+                </ul>
+            </div>
+    </div>
+
+    </nav>
+    </div>
+
+    <!-- kotak kiri  -->
+
+    <section id="isi" class="section section-isi scrollspy ">
+
+        <div style="margin-left: 30px;">
+            <label>
+                <br>
+                <h5 class="blue-text darken-3">Wirausaha Mahasiswa Merdeka Angkatan 1 2021</h5>
+                <h6 class="black-text">Kegiatan Wirausaha</h6>
+                <br><br>
+            </label>
+        </div>
+
+
+        <div class="row" style="margin-left: 50px;">
+            <div class="col s12 m5">
+
+                <h6><b>Informasi Kegiatan</b></h6><br>
+
+            </div>
+            <div class="col s6">
+
+                <h6><b>Melamar Sekarang</b></h6><br>
+
+            </div>
+
+            <div class="col s12 m5">
+                <div class="card grey lighten-3">
+                    <div class="card-content ">
+
+                        <p>Keterangan:
+                        <p>Lorem ipsum dolor sit.
+                        <p>Lorem ipsum dolor sit.
+                        <p>Lorem ipsum dolor sit.
+                        </p>
+
+                        <p>Kualifikasi:
+                        <p>Lorem ipsum dolor sit.
+                        <p>Lorem ipsum dolor sit.
+                        <p>Lorem ipsum dolor sit.
+                        </p>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-content grey lighten-3">
+
+
+                        <div class="">
+                            <label class="black-text">
+                                <h6>Nama Pembimbing:</h6>
+                            </label>
+                            <select class="browser-default grey-text">
+
+                                <option value="1">Fitrah Satrya Fajar Kusumah.M.kom.</option>
+                                <option value="2">Jikri</option>
+
+                            </select>
+                        </div>
+                        <label>
+                            <h7 class="red-text">*)Pastikan Dosen Pembimbing terisi dengan sesuai</h7>
+                        </label>
+                        <h6>Portofolio :</h6>
+                        <div class="file-field input-field white">
+                            <div class="center btn-small grey">
+                                <span>Choose file</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <label class="black-text">
+                                <h6>Judul Proposal:</h6>
+                            </label>
+                            <input type="text" class="white">
+                        </div>
+                        <h6>Proposal :</h6>
+                        <div class="file-field input-field white">
+                            <div class="btn-small grey">
+                                <span>Choose file</span>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
