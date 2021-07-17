@@ -29,8 +29,8 @@
 
 
 <!-- Section: Icon Boxes -->
-<section class="program center">
-    <div class="container">
+<section id="program" class="section section-program scrollspy">
+    <div class="container center">
         <div class="row">
             <div class="col s12 m3">
                 <div class="card-panel hoverable">
@@ -162,7 +162,7 @@
 
 
 <!-- Section: Pengumuman -->
-<section id="Pengumuman" class="section section-berita scrollspy">
+<section id="pengumuman" class="section section-berita scrollspy">
     <div class="container">
         <div class="row">
             <h4 class="center">
