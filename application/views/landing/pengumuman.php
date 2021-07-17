@@ -4,7 +4,7 @@
   <div class="section"></div>
       <div class="section"></div>
       <div class="container">
-               <a href="."><i class="material-icons medium">keyboard_arrow_left</i></a>
+               <a href="./"><i class="material-icons medium">keyboard_arrow_left</i></a>
         <div class="card"> 
             <div class="section">
 
