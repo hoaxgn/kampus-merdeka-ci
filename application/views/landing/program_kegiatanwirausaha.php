@@ -8,7 +8,7 @@
                     <h2>Kegiatan Wirausaha</h2>
 
                 </div>
-            </li>
+            <!-- </li>
             <li>
                 <img src="<?php echo base_url(); ?>assets/img/slider-2-1200.webp">
                 <!-- random image -->
@@ -19,20 +19,23 @@
                 <!-- random image -->
                 <div class="caption right-align">
 
-                </div>
+                </div> -->
             </li>
         </ul>
     </section>
 
     <section id="pengertian" class="section section-pengertian scrollspy">
     <div class="container">
-        <div class="row">
+        <div class="row"> 
             <h4>
                 <span class="teal-text">Pengertian</span>
             </h4>
+
+            <?php  foreach($wirausaha as $wr) ?>
             <p>
-            tessssssssssssssssssss
+            <?=  $wr['pengertian'] ?>
             </p>
+            <?php  ?>
             
         </div>
     </div>
@@ -44,9 +47,13 @@
             <h4>
                 <span class="teal-text">Tujuan</span>
             </h4>
+           
+                 <?php  foreach($wirausaha as $wr) ?>
             <p>
-                
+            <?=  $wr['tujuan'] ?>
             </p>
+                 <?php  ?>
+           
             
         </div>
     </div>
@@ -56,8 +63,15 @@
     <div class="container">
         <div class="row">
             <h4>
-                <span class="teal-text">Pengertian</span>
+                <span class="teal-text">Mekanisme</span>
             </h4>
+           
+                <?php  foreach($wirausaha as $wr) ?>
+                    <p>
+                        <?=  $wr['keg_mekanisme'] ?>
+                    </p>
+                 <?php  ?>
+            
             
             
         </div>
