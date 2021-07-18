@@ -34,28 +34,28 @@
         <div class="row">
             <div class="col s12 m3">
                 <div class="card-panel hoverable">
-                    <a href="#">
+                    <a href="home/program_kegiatanwirausaha">
                         <img src="<?php echo base_url(); ?>/assets/img/icon-kegiatan-wirausaha.png" style="width: 60%;">
                     </a>
                 </div>
             </div>
             <div class="col s12 m3">
                 <div class="card-panel hoverable">
-                    <a href="#">
+                    <a href="home/program_magang">
                         <img src="<?php echo base_url(); ?>/assets/img/icon-magang.png" style="width: 60%;">
                     </a>
                 </div>
             </div>
             <div class="col s12 m3">
                 <div class="card-panel hoverable">
-                    <a href="#">
+                    <a href="home/program_kkn">
                         <img src="<?php echo base_url(); ?>/assets/img/icon-membangun-desa.png" style="width: 60%;">
                     </a>
                 </div>
             </div>
             <div class="col s12 m3">
                 <div class="card-panel hoverable">
-                    <a href="#">
+                    <a href="home/program_mengajar">
                         <img src="<?php echo base_url(); ?>/assets/img/icon-mengajar.png" style="width: 68%;">
                     </a>
                 </div>

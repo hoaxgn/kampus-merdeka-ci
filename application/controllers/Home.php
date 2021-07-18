@@ -34,4 +34,28 @@ class Home extends CI_Controller
         $this->load->view('landing/pengumuman');
         $this->load->view('landing/footer');
     }
+    public function program_magang()
+    {
+        $this->load->view('landing/header');
+        $this->load->view('landing/program_magang');
+        $this->load->view('landing/footer');
+    }
+    public function program_kegiatanwirausaha()
+    {
+        $this->load->view('landing/header');
+        $this->load->view('landing/program_kegiatanwirausaha');
+        $this->load->view('landing/footer');
+    }
+    public function program_kkn()
+    {
+        $this->load->view('landing/header');
+        $this->load->view('landing/program_kkn');
+        $this->load->view('landing/footer');
+    }
+    public function program_mengajar()
+    {
+        $this->load->view('landing/header');
+        $this->load->view('landing/program_mengajar');
+        $this->load->view('landing/footer');
+    }
 }
