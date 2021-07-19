@@ -6,7 +6,7 @@
         <div class="col s12 m7">
             <div class="section">
  
-                 <a href="./"><i class="material-icons medium">keyboard_arrow_left</i></a>                              
+                 <a href="<?= base_url() ?>"><i class="material-icons medium">keyboard_arrow_left</i></a>                              
 
 
               <h4 class="header">Penawaran Beasiswa Rakyat Indonesia</h4>

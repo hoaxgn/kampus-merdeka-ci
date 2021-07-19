@@ -45,6 +45,9 @@ class Home extends CI_Controller
     public function program_kegiatanwirausaha()
     {
         $data['wirausaha'] = $this->M_Home->TampilWirausaha();
+        if( $this->input->post('keyword') ) {
+            $data['wirausaha'] = $this->M_Home>cariDataWirausaha();
+        }
         $this->load->view('landing/header');
         $this->load->view('landing/program_kegiatanwirausaha',$data);
         $this->load->view('landing/footer');
