@@ -88,24 +88,12 @@
                                 <span>Program Kegiatan</span>
                             </a>
                         </li>
-                            <a href="berita">
+                            <a href="info">
                                 <i class="material-icons">library_books</i>
-                                <span>Berita</span>
+                                <span>Informasi</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="pengumuman">
-                                <i class="material-icons">notifications</i>
-                                <span>Pengumuman</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="penawaran">
-                                <i class="material-icons">featured_play_list</i>
-                                <span>Penawaran</span>
-                            </a>
-                        </li>
-
+     
                         <li>
                             <a href="tentangkami">
                                 <i class="material-icons">supervisor_account</i>

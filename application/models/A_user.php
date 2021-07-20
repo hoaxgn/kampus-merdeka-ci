@@ -37,4 +37,4 @@ class A_user extends CI_Model {
         $this->db->where('id_user', $this->input->post('id_user'));
         $this->db->update('tbl_user', $data);
     }
-}
+} 

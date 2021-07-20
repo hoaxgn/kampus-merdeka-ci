@@ -12,6 +12,20 @@ class M_Home extends CI_Model {
         $this->db->where('id_kegiatan','1');
         return $this->db->get('tbl_kegiatan')->result_array();
     }
-
+    // public function TampilMagang()
+    // {
+    //      $this->db->where('id_kegiatan','2');
+    //     return $this->db->get('tbl_kegiatan')->result_array();
+    // }
+    
+    public function TampilBerita()
+    {
+        $this->db->where('jenis_info','1');
+        return $this->db->get('tbl_info')->result_array();
+    }
+    public function getBeritaById($id_info)
+    {
+        return $this->db->get_where('tbl_info', ['id_info' => $id_info])->row_array();
+    }
 
 } 
