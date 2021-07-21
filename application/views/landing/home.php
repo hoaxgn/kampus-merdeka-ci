@@ -98,45 +98,37 @@
             <h4 class="center">
                 <span class="teal-text">Berita</span>
             </h4>
+            <?php  foreach ($berita as $br) : ?>
             <div class="col s12 m4">
+                <a href="<?= base_url(); ?>home/detailberita/<?= $br['id_info']; ?>">
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/resort2.jpg" alt="">
-                        <span class="card-title">Cancun, Mexico</span>
-                    </div>
+                        <img src="<?php echo base_url(); ?>/assets/img/resort2.jpg"  ">
+                     </div>
                     <div class="card-content">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
+                    <h5>
+                             <?=  $br['judul_info']; ?>  
+                    </h5>
+                       <div class="section">
+                             <?=  $br['tgl_upload']; ?>
+                        </div>
                     </div>
+                            
+                                
+                           
                 </div>
+                </a>
             </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/resort2.jpg" alt="">
-                        <span class="card-title">The Bahamas</span>
-                    </div>
-                    <div class="card-content">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
+            
+            <?php endforeach; ?>
             </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/resort3.jpg" alt="">
-                        <span class="card-title">Nova Scotia</span>
-                    </div>
-                    <div class="card-content">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
 </section>
+
+
+
 <!-- Section: Follow -->
 
 <section class="section section-follow #616161 grey darken-2 white-text">
@@ -168,42 +160,31 @@
             <h4 class="center">
                 <span class="teal-text">Pengumuman</span>
             </h4>
+                <?php  foreach ($pengumuman as $pg) : ?>
             <div class="col s12 m4">
+    
                 <div class="card">
                     <div class="card-image">
                     </div>
                     <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
+                    <h5>
+                             <?=  $pg['judul_info']; ?>  
+                    </h5>
+                       <div class="section">
+                             <?=  $pg['tgl_upload']; ?>
+                        </div>
                     </div>
+     
                 </div>
             </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
-            </div>
+            
+            
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
+
+
 <!-- Section: Penawaran -->
 <section id="Pengumuman" class="section section-berita scrollspy">
     <div class="container">
@@ -211,39 +192,24 @@
             <h4 class="center">
                 <span class="teal-text">Penawaran</span>
             </h4>
+            <?php  foreach ($penawaran as $pr) : ?>
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-image">
                     </div>
                     <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
+                    <h5>
+                             <?=  $pr['judul_info']; ?>  
+                    </h5>
+                       <div class="section">
+                             <?=  $pr['tgl_upload']; ?>
+                        </div>
                     </div>
+     
                 </div>
             </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
-            </div>
+            
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
