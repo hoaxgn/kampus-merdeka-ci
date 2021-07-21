@@ -24,14 +24,15 @@
         </ul>
     </section>
 
-    <section id="pengertian" class="section section-pengertian scrollspy">
+    <section id="pengertian" class="section section-pengertian scrollspy"> 
     <div class="container">
         <div class="row">
             <h4>
                 <span class="teal-text">Pengertian</span>
             </h4>
+            <?php  foreach($magang as $mg) ?>
             <p>
-            Magang atau Praktik Kerja adalah aktivitas pembelajaran yang memberikan wawasan dan pengalaman praktis kepada mahasiswa kependidikan dan nonkependidikan mengenai kegiatan riil di lembaga pendidikan dan industri sehingga mahasiswa memiliki kompetensi yang memadai dalam melaksanakan tugas sesuai dengan bidang keahliannya. Praktik kerja bagi mahasiswa kependidikan diarahkan agar mahasiswa memiliki nilai dan wawasan keilmuan pendidikan dan pembelajaran secara teoretik dan aplikatif dalam bingkai budaya Indonesia, dalam perannya sebagai pendidik yang kritis, inovatif, adaptif, dan komunikatif sesuai dengan karakter dan budaya peserta didik di era global. Praktik kerja bagi mahasiswa nonkependidikan dilaksanakan di dunia usaha atau industri agar mahasiswa memiliki pengalaman praktis dan bermakna kepada mahasiswa sesuai dengan bidang keahliannya, meningkatkan kompetensi keilmuan, dan memberikan pengalaman memecahkan masalah yang ada di dunia kerja.
+              <?=  $mg['pengertian'] ?>
             </p>
             
         </div>
@@ -44,9 +45,11 @@
             <h4>
                 <span class="teal-text">Tujuan</span>
             </h4>
+            
             <p>
-                
+            <?=  $mg['tujuan'] ?>
             </p>
+                
             
         </div>
     </div>
@@ -56,10 +59,12 @@
     <div class="container">
         <div class="row">
             <h4>
-                <span class="teal-text">Pengertian</span>
+                <span class="teal-text">Mekanisme</span>
             </h4>
-            
-            
+                    <p>
+                        <?=  $mg['keg_mekanisme'] ?>
+                    </p>
+            <?php  ?>
         </div>
     </div>
     </section>

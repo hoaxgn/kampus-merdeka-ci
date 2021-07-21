@@ -24,16 +24,16 @@
         <nav class="dark navbar-fixed">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#" class="brand-logo "><img src="<?php echo base_url(); ?>/assets/img/logo-kampus-merdeka.png"></a>
+                    <a href="<?= base_url() ?>" class="brand-logo "><img src="<?php echo base_url(); ?>/assets/img/logo-kampus-merdeka.png"></a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a href="#home">Home</a>
+                            <a href="<?= base_url() ?>">Home</a>
                         </li>
                         <li>
-                            <a href="about">About</a>
+                            <a href="home/about">About</a>
                         </li>
                         <li>
                             <a href="#program">Program Kegiatan</a>

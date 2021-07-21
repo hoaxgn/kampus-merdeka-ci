@@ -162,7 +162,7 @@
             </h4>
                 <?php  foreach ($pengumuman as $pg) : ?>
             <div class="col s12 m4">
-    
+  <a href="<?= base_url(); ?>home/detailpengumuman/<?= $pg['id_info']; ?>">   
                 <div class="card">
                     <div class="card-image">
                     </div>
@@ -178,7 +178,7 @@
                 </div>
             </div>
             
-            
+  </a>       
             <?php endforeach; ?>
         </div>
     </div>
@@ -194,6 +194,7 @@
             </h4>
             <?php  foreach ($penawaran as $pr) : ?>
             <div class="col s12 m4">
+      <a href="<?= base_url(); ?>home/detailpenawaran/<?= $pr['id_info']; ?>"> 
                 <div class="card">
                     <div class="card-image">
                     </div>
@@ -208,7 +209,7 @@
      
                 </div>
             </div>
-            
+      </a>     
             <?php endforeach; ?>
         </div>
     </div>
