@@ -160,42 +160,31 @@
             <h4 class="center">
                 <span class="teal-text">Pengumuman</span>
             </h4>
+                <?php  foreach ($pengumuman as $pg) : ?>
             <div class="col s12 m4">
+    
                 <div class="card">
                     <div class="card-image">
                     </div>
                     <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
+                    <h5>
+                             <?=  $pg['judul_info']; ?>  
+                    </h5>
+                       <div class="section">
+                             <?=  $pg['tgl_upload']; ?>
+                        </div>
                     </div>
+     
                 </div>
             </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
-            </div>
+            
+            
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
+
+
 <!-- Section: Penawaran -->
 <section id="Pengumuman" class="section section-berita scrollspy">
     <div class="container">
@@ -203,39 +192,24 @@
             <h4 class="center">
                 <span class="teal-text">Penawaran</span>
             </h4>
+            <?php  foreach ($penawaran as $pr) : ?>
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-image">
                     </div>
                     <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
+                    <h5>
+                             <?=  $pr['judul_info']; ?>  
+                    </h5>
+                       <div class="section">
+                             <?=  $pr['tgl_upload']; ?>
+                        </div>
                     </div>
+     
                 </div>
             </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-content">
-                        <h4>TEST</h4>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
-                        perferendis.
-                    </div>
-                </div>
-            </div>
+            
+            <?php endforeach; ?>
         </div>
     </div>
 </section>

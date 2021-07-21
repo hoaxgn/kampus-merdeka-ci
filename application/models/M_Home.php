@@ -28,4 +28,16 @@ class M_Home extends CI_Model {
         return $this->db->get_where('tbl_info', ['id_info' => $id_info])->row_array();
     }
 
+    public function TampilPengumuman()
+    {
+        $this->db->where('jenis_info','2');
+        return $this->db->get('tbl_info')->result_array();
+    }
+
+    public function TampilPenawaran()
+    {
+        $this->db->where('jenis_info','3');
+        return $this->db->get('tbl_info')->result_array();
+    }
+
 } 

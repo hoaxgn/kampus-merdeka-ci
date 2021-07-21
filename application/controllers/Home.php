@@ -16,9 +16,20 @@ class Home extends CI_Controller
         if( $this->input->post('keyword') ) {
             $data['berita'] = $this->M_Home>cariDataberita();
         }
+        $data['pengumuman'] = $this->M_Home->TampilPengumuman();
+        if( $this->input->post('keyword') ) {
+            $data['pengumuman'] = $this->M_Home>cariDataPengumuman();
+        }
+        $data['penawaran'] = $this->M_Home->TampilPenawaran();
+        if( $this->input->post('keyword') ) {
+            $data['penawaran'] = $this->M_Home>cariDataPenawaran();
+        }
         $this->load->view('landing/header');
         $this->load->view('landing/home',$data);
         $this->load->view('landing/footer');
+
+
+
     }
 
     public function about()
@@ -27,17 +38,7 @@ class Home extends CI_Controller
         $this->load->view('landing/about');
         $this->load->view('landing/footer');
     }
-    // Berita
-    // public function berita()
-    // {
-    //     $data['berita'] = $this->M_Home->TampilBerita();
-    //     if( $this->input->post('keyword') ) {
-    //         $data['berita'] = $this->M_Home>cariDataberita();
-    //     }
-    //     $this->load->view('landing/header');
-    //     $this->load->view('landing/home',$data);
-    //     $this->load->view('landing/footer');
-    // }
+ 
     public function detailberita($id_info)
     {
         $data['berita'] = $this->M_Home->getBeritaById($id_info);
