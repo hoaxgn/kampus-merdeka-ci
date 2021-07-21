@@ -29,13 +29,7 @@ class Home extends CI_Controller
         $this->load->view('landing/footer');
     }
 
-    public function about()
-    {
-        $this->load->view('landing/header');
-        $this->load->view('landing/about');
-        $this->load->view('landing/footer');
-    }
- 
+
     public function detailberita($id_info)
     {
         $data['berita'] = $this->M_Home->getInfoById($id_info);
@@ -95,4 +89,13 @@ class Home extends CI_Controller
         $this->load->view('landing/program_mengajar');
         $this->load->view('landing/footer');
     }
+    public function about()
+    {
+        $data['tentang'] = $this->M_Home->TampilTentang();
+
+        $this->load->view('landing/header');
+        $this->load->view('landing/about',$data);
+        $this->load->view('landing/footer');
+    }
+ 
 }

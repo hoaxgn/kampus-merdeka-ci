@@ -33,7 +33,7 @@
                             <a href="<?= base_url() ?>">Home</a>
                         </li>
                         <li>
-                            <a href="home/about">About</a>
+                            <a href="<?= base_url() ?>/home/about">About</a>
                         </li>
                         <li>
                             <a href="#program">Program Kegiatan</a>

@@ -45,5 +45,12 @@ class M_Home extends CI_Model {
         $this->db->where('jenis_info','3');
         return $this->db->get('tbl_info')->result_array();
     }
+    public function TampilTentang()
+    {
+        $this->db->where('id_tentang','1');
+        return $this->db->get('tbl_tentang')->result_array();
+     
+    }
+
 
 } 

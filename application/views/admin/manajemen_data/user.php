@@ -55,14 +55,9 @@
                                         <td><?=  $us['id_user']; ?></td>
                                         <td><?=  $us['username']; ?></td>
                                         <td><?=  $us['password']; ?></td>
-                                        <td><?=  $us['role']; ?></td>                                       
-                                       
-                                        
-                                        
-                                      
-                                                                             
+                                        <td><?=  $us['role']; ?></td>                                                                                                               
                                         <td>
-                                            <button type="button" class="btn btn bg-grey waves-effect" data-toggle="modal" data-target="#edit">
+                                            <button type="button" class="btn btn bg-grey waves-effect" data-toggle="modal" data-target="#edit" data-id="<?= $us['id_user']; ?>">
                                                 <i class="material-icons">mode_edit</i></button>
 
                                                 <a href="<?= base_url(); ?>admin/manajemenuser/hapus/<?= $us['id_user']; ?>">
@@ -156,8 +151,8 @@
     </div>
                
                 <!-- {{-- -------------------------- Pop Up - edit------------------------------------------ --}} -->
-
-                <div class="modal fade" id="edit" tabindex="-1" role="dialog">
+          
+         <div class="modal fade" id="edit" tabindex="-1" role="dialog">
                 <div class="card modal-dialog" role="document">
                         <div class="modal-content"> <div class="modal-content">
                                        
@@ -166,10 +161,9 @@
                    <h4 class="modal-title" id="defaultModalLabel">Edit Data User</h4>
                        </div>
                    <div class="modal-body">
-                    <input type="hidden" name="id" value="<?= $user['id_user']; ?>">  
-                    
-                    <form action="manajemenuser/ubah" method="post">
                                    
+                    <form action="<?= base_url('manajemenuser/ubah')?> method="POST">
+                      <input type="hidden"  class="form-control" name="username" value="<?= $us['id_user']; ?>" >       
                        <div class=" form-group">
                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                <label for="username">Username</label>
@@ -177,8 +171,9 @@
                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                <div class="form-group">
                                    <div class="form-line">
-                                       <input type="text"  class="form-control" name="username" value="<?= $user['username']; ?>" >
-                                       <small class="form-text text-danger"><?= form_error('username'); ?></small>
+                                      
+                                       <input type="text"  class="form-control" name="username" value="<?= $us['username']; ?>" >
+                                       
                                    </div>
                                </div>
                            </div>
@@ -190,8 +185,8 @@
                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                <div class="form-group">
                                    <div class="form-line">
-                                       <input type="text"  class="form-control" name="password" value="<?= $user['password']; ?>" >
-                                       <small class="form-text text-danger"><?= form_error('password'); ?></small>
+                                       <input type="text"  class="form-control" name="password" value="<?= $us['password']; ?>" >
+                                       
                                    </div>
                                </div>
                            </div>
@@ -223,5 +218,5 @@
         </div>
      </div>  
     </div>
-
+   
 </section>
