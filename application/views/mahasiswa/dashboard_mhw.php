@@ -1,5 +1,5 @@
 <!-- kotak kiri  -->
-<div class="slider">
+ <div class="slider">
   <ul class="slides">
     <li>
       <img src="<?php echo base_url(); ?>/assets/img/slider-2-1200.webp"> <!-- random image -->
@@ -9,7 +9,7 @@
     </li>
   </ul>
 </div>
-<section id="isi" class="section section-isi scrollspy ">
+<section   class="section section-isi scrollspy ">
 
   <div class="row">
 
@@ -33,7 +33,7 @@
       <div class="row">
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-            <a href="Program_Wirausaha.html">
+            <a href="<?= base_url() ?>mahasiswa/dashboard">
               <img src="<?php echo base_url(); ?>/assets/img/icon-kegiatan-wirausaha.png" style="width: 60%;">
             </a>
           </div>

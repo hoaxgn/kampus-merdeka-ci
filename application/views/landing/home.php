@@ -100,7 +100,7 @@
             </h4>
             <?php  foreach ($berita as $br) : ?>
             <div class="col s12 m4">
-                <a href="<?= base_url(); ?>home/detailberita/<?= $br['id_info']; ?>">
+                <a href="<?= base_url(); ?>home/detailberita/<?= $br['id_info']; ?>"class="black-text">
                 <div class="card">
                     <div class="card-image">
                         <img src="<?php echo base_url(); ?>/assets/img/resort2.jpg"  ">
@@ -162,7 +162,7 @@
             </h4>
                 <?php  foreach ($pengumuman as $pg) : ?>
             <div class="col s12 m4">
-  <a href="<?= base_url(); ?>home/detailpengumuman/<?= $pg['id_info']; ?>">   
+  <a href="<?= base_url(); ?>home/detailpengumuman/<?= $pg['id_info']; ?>"class="black-text">   
                 <div class="card">
                     <div class="card-image">
                     </div>
@@ -194,7 +194,7 @@
             </h4>
             <?php  foreach ($penawaran as $pr) : ?>
             <div class="col s12 m4">
-      <a href="<?= base_url(); ?>home/detailpenawaran/<?= $pr['id_info']; ?>"> 
+      <a href="<?= base_url(); ?>home/detailpenawaran/<?= $pr['id_info']; ?>"class="black-text"> 
                 <div class="card">
                     <div class="card-image">
                     </div>
