@@ -1,8 +1,8 @@
 <section class="content">
     
 <div class="container-fluid">
-                                                <div class="block-header">
-                                                    <h2>Manajemen User</h2>
+                  <div class="block-header">
+                      <h1>pembukaan Pendaftaran Program Kegiatan</h1>
                                                 </div>
               <!-- Striped Rows -->
                                               
@@ -11,7 +11,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header">
-                    <button type="button" class="btn bg-blue waves-effect mb-5" data-toggle="modal" data-target="#tambah">+ Tambah Data Pengumuman</button>
+                    <button type="button" class="btn bg-blue waves-effect mb-5" data-toggle="modal" data-target="#tambah">+ Tambah Data Program</button>
                     <ul class="header-dropdown m-r--5">
                          
                         
@@ -34,12 +34,10 @@
                         <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                             <thead>
                                 <tr>
-                                        <th> </th>  
-                                        <th> </th>
-                                        <th> </th>
-                                        <th> </th>
-                                        <th> </th>
-                                    
+
+                                        <th>Id Program Kegiatan </th>
+                                        <th>Nama Program Kegiatan </th>
+                                        <th>Status</th>                                                                                                             
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -48,19 +46,19 @@
                                       
                                     
                                     <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>                                       
-                                        <td>5</td>
+                                        <td>Magang</td>
+                                                                           
+                                        
                                        
-                                                                             
+                                              <td><button type="button" class="btn btn bg-grey waves-effect">
+                                                Program Kegiatan Dibuka</button></td>                               
                                         <td>
-                                            <button type="button" class="btn btn bg-grey waves-effect" data-toggle="modal" data-target="#edit">
+                                            
+                                              <button type="button" class="btn btn bg-blue waves-effect" data-toggle="modal" data-target="#status">
                                                 <i class="material-icons">mode_edit</i></button>
-                                                <a href=""></a>
                                             <button type="button" class="btn btn bg-red waves-effect">
-                                                <i class="material-icons">delete</i>
-                                            </button>
+                                                <i class="material-icons">delete</i></button>
+                                            
                                         </td>
                                     </tr>
                                   
@@ -80,67 +78,33 @@
 
                <!-- {{-- -------------------------- Pop Up - Form ------------------------------------------ --}} -->
 
-               <div class="modal fade" id="tambah" tabindex="-1" role="dialog">
+               <div class="modal fade" id="status" tabindex="-1" role="dialog">
                 <div class="card modal-dialog" role="document">
                         <div class="modal-content"> <div class="modal-content">
                                        
                                           
            <div class="modal-header">
-                   <h4 class="modal-title" id="defaultModalLabel">Tambah Data User</h4>
+                   <h4 class="modal-title" id="defaultModalLabel">Status Program Kegiatan</h4>
                        </div>
                    <div class="modal-body">
 
                     <form class="form-horizontal">  
                                  <form action>
-                                   
-                       <div class="row clearfix">
-                           <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                               <label> </label>
-                           </div>
-                           <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
-                               <div class="form-group">
-                                   <div class="form-line">
-                                       <input type="string"  class="form-control" name="id_role" placeholder="Masukan  ">
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="row clearfix">
-                           <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                               <label for=" _address_2"> </label>
-                           </div>
-                           <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
-                               <div class="form-group">
-                                   <div class="form-line">
-                                       <input type="text"  class="form-control" name=" " placeholder="Masukan  ">
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="row clearfix">
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                            <label for=" _address_2"> </label>
-                        </div>
-                        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <input type="text"  class="form-control" name=" " placeholder="Masukan  ">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                            <label for=" _address_2"> </label>
-                        </div>
-                        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
-                            <div class="form-group">
-                                <div class="form-line">
-                                    <input type="text"  class="form-control" name=" " placeholder="Masukan  ">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                          <div class=" form-group">
+                                                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                                                        <label for="role">Role</label>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                    <select class="form-control show-tick" id="role" name='role'>
+                                                        <option value="select">-- Status --</option>
+                                                        <option value="1">Dibuka</option>
+                                                        <option value="2">Ditutup</option>
+                                                       
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                    
                             <div class="modal-footer">
                                 <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
                                     <button type="submit"  class="btn bg-grey waves-effect">Simpan</button>

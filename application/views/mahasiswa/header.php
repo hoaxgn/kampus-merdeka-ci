@@ -41,7 +41,7 @@
     <section class="section grey white-text">
         <div class="row">
             <div class="col s12 left">
-                <a href="#" class="brand-logo "><img src="<?php echo base_url(); ?>/assets/img/logo-kampus-merdeka.png">
+                <a href="#" class="brand-logo "><img src="<?php echo base_url(); ?>/assets/img/logo-kampus-merdeka.png" > 
                 </a>
                 <img src="<?php echo base_url(); ?>/assets/img/avatar-10.png" alt="" class="dropdown-trigger right" data-target="dropdown2" style="width: 50px; margin-right: 50px; margin-top: 25px;">
             </div>
@@ -58,22 +58,23 @@
             <div class="nav-wrapper">
                 <ul class="left ">
                     <li>
-                        <a href="#home" class="black-text">Dashboard</a>
+                        <a href="<?= base_url() ?>mahasiswa" class="black-text">Dashboard</a>
                     </li>
                     <!-- Dropdown Trigger -->
                     <li><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Pengajuan Usulan<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li>
-                        <a href="#program" class="black-text">Profil</a>
+                        <a href="<?= base_url() ?>mahasiswa/infoku" class="black-text">Profil</a>
                     </li>
                 </ul>
                 <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!">Catatan Harian</a></li>
-                    <li><a href="#!">Laporan Tengah</a></li>
-                    <li><a href="#!">Laporan Akhir</a></li>
+                    <li><a href="<?= base_url() ?>mahasiswa/laporan_harian">Catatan Harian</a></li>
+                    <li><a href="<?= base_url() ?>mahasiswa/laporan_tengah_status">Laporan Tengah</a></li>
+                    <li><a href="<?= base_url() ?>mahasiswa/laporan_akhir_status">Laporan Akhir</a></li>
                     <li><a href="#!">Pengumuman</a></li>
                 </ul>
             </div>
     </div>
-
+                
     </nav>
     </div>
+    

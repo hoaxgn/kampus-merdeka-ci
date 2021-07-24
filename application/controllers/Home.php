@@ -27,36 +27,29 @@ class Home extends CI_Controller
         $this->load->view('landing/header');
         $this->load->view('landing/home',$data);
         $this->load->view('landing/footer');
-
-
-
     }
 
-    public function about()
-    {
-        $this->load->view('landing/header');
-        $this->load->view('landing/about');
-        $this->load->view('landing/footer');
-    }
- 
+
     public function detailberita($id_info)
     {
-        $data['berita'] = $this->M_Home->getBeritaById($id_info);
+        $data['berita'] = $this->M_Home->getInfoById($id_info);
         $this->load->view('landing/header');
         $this->load->view('landing/berita',$data);
         $this->load->view('landing/footer');
     }
 
-    public function pengumuman()
+    public function detailpengumuman($id_info)
     {
+        $data['pengumuman'] = $this->M_Home->getInfoById($id_info);
         $this->load->view('landing/header');
-        $this->load->view('landing/penawaran');
+        $this->load->view('landing/pengumuman',$data);
         $this->load->view('landing/footer');
     } 
-    public function penawaran()
+    public function detailpenawaran($id_info)
     {
+        $data['penawaran'] = $this->M_Home->getInfoById($id_info);
         $this->load->view('landing/header');
-        $this->load->view('landing/pengumuman');
+        $this->load->view('landing/penawaran',$data);
         $this->load->view('landing/footer');
     }
     // wirausaha
@@ -75,8 +68,12 @@ class Home extends CI_Controller
     
     public function program_magang()
     {
+        $data['magang'] = $this->M_Home->TampilMagang();
+        if( $this->input->post('keyword') ) {
+            $data['magang'] = $this->M_Home>cariDataMagang();
+        }
         $this->load->view('landing/header');
-        $this->load->view('landing/program_magang');
+        $this->load->view('landing/program_magang',$data);
         $this->load->view('landing/footer');
     }
 
@@ -92,4 +89,13 @@ class Home extends CI_Controller
         $this->load->view('landing/program_mengajar');
         $this->load->view('landing/footer');
     }
+    public function about()
+    {
+        $data['tentang'] = $this->M_Home->TampilTentang();
+
+        $this->load->view('landing/header');
+        $this->load->view('landing/about',$data);
+        $this->load->view('landing/footer');
+    }
+ 
 }

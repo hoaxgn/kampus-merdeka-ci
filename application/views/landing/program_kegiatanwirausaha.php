@@ -35,7 +35,6 @@
             <p>
             <?=  $wr['pengertian'] ?>
             </p>
-            <?php  ?>
             
         </div>
     </div>
@@ -46,15 +45,10 @@
         <div class="row">
             <h4>
                 <span class="teal-text">Tujuan</span>
-            </h4>
-           
-                 <?php  foreach($wirausaha as $wr) ?>
+            </h4> 
             <p>
             <?=  $wr['tujuan'] ?>
-            </p>
-                 <?php  ?>
-           
-            
+            </p>      
         </div>
     </div>
     </section>
@@ -65,8 +59,7 @@
             <h4>
                 <span class="teal-text">Mekanisme</span>
             </h4>
-           
-                <?php  foreach($wirausaha as $wr) ?>
+
                     <p>
                         <?=  $wr['keg_mekanisme'] ?>
                     </p>
