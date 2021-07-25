@@ -32,28 +32,28 @@
       <div class="row">
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-            <a href="<?= base_url() ?>mahasiswa/dashboard">
+            <a href="<?= base_url() ?>mahasiswa/kegiatanwirausaha">
               <img src="<?php echo base_url(); ?>/assets/img/icon-kegiatan-wirausaha.png" style="width: 60%;">
             </a>
           </div>
         </div>
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-            <a href="validasi_magang.html">
+          <a href="<?= base_url() ?>mahasiswa/magang">
               <img src="<?php echo base_url(); ?>/assets/img/icon-magang.png" style="width: 60%;">
             </a>
           </div>
         </div>
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-            <a href="#">
+          <a href="<?= base_url() ?>mahasiswa/kkn">
               <img src="<?php echo base_url(); ?>/assets/img/icon-membangun-desa.png" style="width: 60%;">
             </a>
           </div>
         </div>
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-            <a href="#">
+          <a href="<?= base_url() ?>mahasiswa/mengajar">
               <img src="<?php echo base_url(); ?>/assets/img/icon-mengajar.png" style="width: 68%;">
             </a>
           </div>

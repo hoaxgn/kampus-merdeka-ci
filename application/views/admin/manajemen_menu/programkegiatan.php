@@ -187,6 +187,7 @@
                                </div>
                            </div>
                        </div>
+                       
                             <div class="modal-footer">
                                 <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
                                     <button type="submit" name="tambah" class="btn bg-grey waves-effect">Simpan</button>
