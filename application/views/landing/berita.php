@@ -18,7 +18,7 @@
 
                     <div class="section">
                             <div class="center" >
-                        <img src="<?= base_url() ?>assets/images/gallary/4.png" width="50%" >
+                            <img src="<?php echo base_url(); ?>/assets/picture/<?= $berita['gambar']; ?>" width="600px" height="400px">
                              </div>
                         </div>
                     

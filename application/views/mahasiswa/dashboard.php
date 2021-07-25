@@ -52,7 +52,7 @@
          <div class="row">
              <div class="col s8">
                  <div class="card grey lighten-3">
-                  <a href="<?= base_url() ?>mahasiswa/melamar" class="black-text">
+                  <a href="<?= base_url() ?>mahasiswa/daftar_anggota" class="black-text">
                      <div class="card-content">
                          <div class="col s6">
                              <h6 class="blue-text">Pertukaran Mahasiswa Merdeka Angkatan 1 2021</h6>
