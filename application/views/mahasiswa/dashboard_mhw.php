@@ -1,15 +1,14 @@
-<!-- kotak kiri  -->
- <div class="slider">
-  <ul class="slides">
-    <li>
-      <img src="<?php echo base_url(); ?>/assets/img/slider-2-1200.webp"> <!-- random image -->
-    </li>
-    <li>
-      <img src="<?php echo base_url(); ?>/assets/img/slider-3-1200.webp"> <!-- random image -->
-    </li>
-  </ul>
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img src="<?php echo base_url(); ?>assets/img/slider-2-1200.webp"> <!-- random image -->
+        </li>
+        <li>
+            <img src="<?php echo base_url(); ?>assets/img/slider-3-1200.webp"> <!-- random image -->
+        </li>
+    </ul>
 </div>
-<section   class="section section-isi scrollspy ">
+
 
   <div class="row">
 

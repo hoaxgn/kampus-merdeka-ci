@@ -103,7 +103,7 @@
                 <a href="<?= base_url(); ?>home/detailberita/<?= $br['id_info']; ?>"class="black-text">
                 <div class="card">
                     <div class="card-image">
-                        <img src="<?php echo base_url(); ?>/assets/img/resort2.jpg"  ">
+                        <img src="<?php echo base_url(); ?>/assets/picture/<?= $br['gambar']; ?>" width="250px" height="240px">
                      </div>
                     <div class="card-content">
                     <h5>

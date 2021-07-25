@@ -58,7 +58,7 @@
                                         <td><?=  $in['jenis_info']; ?></td>
                                         <td><?=  $in['judul_info']; ?></td>  
                                         <td><?=  $in['info']; ?></td>    
-                                        <td><?=  $in['gambar']; ?></td> 
+                                        <td><img src="<?php echo base_url(); ?>/assets/picture/<?= $in['gambar']; ?>" width="110px" height="110px"></td> 
                                         <td><?=  $in['tgl_upload']; ?></td>                                        
                                         
                                        

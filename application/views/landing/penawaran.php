@@ -13,7 +13,7 @@
             </div>
     <div class="card horizontal">
          <div class="card-image">
-              <img src="<?= base_url() ?>assets/img/resort3.jpg" width="50%" alt="">
+         <img src="<?php echo base_url(); ?>/assets/picture/<?= $penawaran['gambar']; ?>" width="350px" height="340px">
          </div>
       <div class="card-stacked">
           <div class="card-content">

@@ -231,7 +231,9 @@
    </div>
    </div>
    <div class="container">
+        <a href="<?= base_url() ?>mahasiswa/programdiikuti" class="black-text">
        <center> <button style="margin-top: -30px;" class="btn-large centered blue"> Daftar</button></center>
+        </a>
    </div>
 
 
