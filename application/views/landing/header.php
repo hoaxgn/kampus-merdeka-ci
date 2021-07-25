@@ -45,7 +45,7 @@
                             <a href="#pengumuman">Pengumuman</a>
                         </li>
                         <li>
-                            <a href="login.html" class="waves-effect waves-light btn">Login</a>
+                            <a href="<?= base_url() ?>auth/index" class="waves-effect waves-light btn">Login</a>
                         </li>
                     </ul>
                 </div>
