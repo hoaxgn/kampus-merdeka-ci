@@ -8,11 +8,11 @@ class Mahasiswa extends CI_Controller
         $this->load->view('mahasiswa/header');
         $this->load->view('mahasiswa/dashboard_mhw');
     }
-    public function dashboard()
-    {
-        $this->load->view('mahasiswa/header');
-        $this->load->view('mahasiswa/dashboard');
-    }
+    // public function dashboard()
+    // {
+    //     $this->load->view('mahasiswa/header');
+    //     $this->load->view('mahasiswa/dashboard');
+    // }
     public function password()
     {
         $this->load->view('mahasiswa/header');
@@ -74,5 +74,27 @@ class Mahasiswa extends CI_Controller
     {
         $this->load->view('mahasiswa/header');
         $this->load->view('mahasiswa/daftar_anggota');
+    }
+
+    //Dashboard Program Kegiatan
+    public function kegiatanwirausaha()
+    {
+        $this->load->view('mahasiswa/header');
+        $this->load->view('mahasiswa/program/kegiatanwirausaha');
+    }
+    public function magang()
+    {
+        $this->load->view('mahasiswa/header');
+        $this->load->view('mahasiswa/program/magang');
+    }
+    public function kkn()
+    {
+        $this->load->view('mahasiswa/header');
+        $this->load->view('mahasiswa/program/kkn');
+    }
+    public function mengajar()
+    {
+        $this->load->view('mahasiswa/header');
+        $this->load->view('mahasiswa/program/mengajar');
     }
 }

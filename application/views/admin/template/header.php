@@ -32,7 +32,13 @@
 
     <!-- Bootstrap Select Css -->
     <link href="<?= base_url('assets/dash/') ?>plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
-    
+
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="<?= base_url('assets/dash/') ?>plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Bootstrap DatePicker Css -->
+    <link href="<?= base_url('assets/dash/') ?>plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+        
     
 </head>
 
