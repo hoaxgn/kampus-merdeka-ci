@@ -34,7 +34,7 @@
                         <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                             <thead>
                                 <tr>
-
+                                        <th>No</th>
                                         <th>Id Program Kegiatan </th>
                                         <th>Nama Program Kegiatan </th>
                                         <th>Status</th>                                                                                                             
@@ -42,16 +42,15 @@
                                     </tr>
                                 </thead>
                                 <tbody> 
-                                    
+                                    <tr>
                                       
-                                    
-                                    <td>1</td>
-                                        <td>Magang</td>
-                                                                           
-                                        
-                                       
-                                              <td><button type="button" class="btn btn bg-grey waves-effect">
-                                                Program Kegiatan Dibuka</button></td>                               
+                                <?php $no=1;
+                                 foreach ($kegiatan as $keg) : ?>
+                                        <td><?=  $no++ ?></td>
+                                        <td><?=  $keg['id_kegiatan']; ?></td>
+                                        <td><?=  $keg['kegiatan']; ?></td>
+                                        <td>Aktif</td>
+                                                                                                     
                                         <td>
                                             
                                               <button type="button" class="btn btn bg-blue waves-effect" data-toggle="modal" data-target="#status">
@@ -62,6 +61,7 @@
                                         </td>
                                     </tr>
                                   
+                              <?php endforeach; ?>
 
                                 </tbody>
                             </table>
@@ -90,15 +90,28 @@
 
                     <form class="form-horizontal">  
                                  <form action>
+                                    
+                        <div class="row clearfix">
+                               <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                                   <label>Nama Program Kegiatan </label>
+                               </div>
+                               <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                   <div class="form-group">
+                                       <div class="form-line">
+                                       <input type="text" class="form-control" placeholder="Kegiatan Wirausaha" disabled />
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
                                           <div class=" form-group">
                                                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                                        <label for="role">Role</label>
+                                                        <label for="role">Status Kegiatan</label>
                                                     </div>
                                                     <div class="col-sm-6">
                                                     <select class="form-control show-tick" id="role" name='role'>
                                                         <option value="select">-- Status --</option>
-                                                        <option value="1">Dibuka</option>
-                                                        <option value="2">Ditutup</option>
+                                                        <option value="1">Aktif</option>
+                                                        <option value="2">NonAktif</option>
                                                        
 
                                                     </select>

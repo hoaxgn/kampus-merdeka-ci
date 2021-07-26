@@ -33,7 +33,8 @@
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                             <thead>
-                                <tr>
+                                <tr>    
+                                        <th>No</th>
                                         <th>Id Kegiatan</th>
                                         <th>Nama Kegiatan </th>
                                         <th>Aksi</th>
@@ -45,7 +46,8 @@
                                 <tbody> 
                                     
                                       
-                                <?php  foreach ($kegiatan as $keg) : ?>
+                                <?php $no=1; foreach ($kegiatan as $keg) : ?>
+                                        <td><?=  $no++ ?></td>
                                         <td><?=  $keg['id_kegiatan']; ?></td>
                                         <td><?=  $keg['kegiatan']; ?></td>
 
