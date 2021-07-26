@@ -164,18 +164,25 @@
                             </div>
                         </div>
                     </div>
+                
+
                     <div class="row clearfix">
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-3 form-control-label">
                             <label for>Tanggal Upload</label>
                         </div>
                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
-                            <div class="form-group">
+                            <div class="input-group date" id="bs_datepicker_component_container">
                                 <div class="form-line">
                                     <input type="text"  class="form-control" name=" " placeholder="Masukan  ">
                                 </div>
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">date_range</i>
+                                        </span>
                             </div>
                         </div>
                     </div>
+ 
+                                         
                             <div class="modal-footer">
                                 <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
                                     <button type="submit"  class="btn bg-grey waves-effect">Simpan</button>
