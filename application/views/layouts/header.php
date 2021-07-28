@@ -54,7 +54,7 @@
             </div>
             <ul id='dropdown2' class='dropdown-content'>
                 <li><a href="#!">Account</a></li>
-                <li><a href="#!">Logout</a></li>
+                <li><a href="<?= base_url('auth/login'); ?>">Logout</a></li>
             </ul>
         </div>
     </section>

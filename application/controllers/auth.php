@@ -28,14 +28,14 @@ class auth extends CI_Controller
     {
         $username    = $this->input->post('username', TRUE);
         $password = md5($this->input->post('password', TRUE));
-        $user = $this->db->get_where('tbl_user', ['username' => $username], ['password' => $password]);
+        $user = $this->db->get_where('tbl_mhs', ['npm' => $username], ['password' => $password]);
 
         if ($user != null) {
             $data  = $user->row_array();
-            $username  = $data['username'];
+            $username  = $data['npm'];
             $role_id = $data['role'];
             $sesdata = array(
-                'username'  => $username,
+                'npm'  => $username,
                 'role'     => $role_id
             );
             $this->session->set_userdata($sesdata);
@@ -86,13 +86,12 @@ class auth extends CI_Controller
             $this->load->view('auth/footer');
         } else {
             $data = [
-                'id_role' => 2,
+                'role' => 1,
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'npm' => htmlspecialchars($this->input->post('npm', true)),
                 'nama_mhs' => htmlspecialchars($this->input->post('nama_mhs', true)),
                 'email' => htmlspecialchars($this->input->post('email', true)),
             ];
-
             $this->db->insert('tbl_mhs', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
 			Congratulation your account has been created. Please Login!
