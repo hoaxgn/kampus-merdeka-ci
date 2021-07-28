@@ -10,10 +10,10 @@
 
                     <div class='row'>
                         <div class='input-field col s12'>
-                            <input class='validate' type='text' name='npm' id='npm' />
-                            <label for='npm'>Enter your NPM/NIDN</label>
+                            <input class='validate' type='text' name='username' id='username' />
+                            <label for='username'>Enter your NPM/NIDN</label>
                         </div>
-                        <?= form_error('npm', '<small class="text-danger" pl-3>', '</small>'); ?>
+                        <?= form_error('username', '<small class="text-danger" pl-3>', '</small>'); ?>
                     </div>
 
                     <div class='row'>

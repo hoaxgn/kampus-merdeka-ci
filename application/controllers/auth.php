@@ -7,11 +7,13 @@ class auth extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation');
+        $this->load->model('login_model');
     }
 
     public function index()
     {
-        $this->form_validation->set_rules('npm', 'Npm', 'trim|required');
+
+        $this->form_validation->set_rules('username', 'Username', 'trim|required');
         $this->form_validation->set_rules('password', 'Password', 'required|trim');
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Kampus Merdeka Login';
@@ -24,12 +26,42 @@ class auth extends CI_Controller
     }
     private function _login()
     {
-        $email = $this->input->post('email');
-        $password = $this->input->post('password');
+        $username    = $this->input->post('username', TRUE);
+        $password = md5($this->input->post('password', TRUE));
+        $user = $this->db->get_where('tbl_user', ['username' => $username], ['password' => $password]);
 
-        $user = $this->db->get_where('tbl_mhs', ['email' => $email])->row_array();
-        var_dump('$user');
-        die;
+        if ($user != null) {
+            $data  = $user->row_array();
+            $username  = $data['username'];
+            $role_id = $data['role'];
+            $sesdata = array(
+                'username'  => $username,
+                'role'     => $role_id
+            );
+            $this->session->set_userdata($sesdata);
+            // access login for admin
+            if ($role_id === '1') {
+                $this->load->view('mahasiswa/header');
+                $this->load->view('mahasiswa/dashboard_mhw');
+                // redirect('Mahasiswa');
+
+                // access login for staff
+            } elseif ($role_id === '2') {
+                $this->load->view('layouts/header');
+                $this->load->view('dosen/dashboarddosen');
+                $this->load->view('layouts/footer');
+
+                // access login for author
+            } else {
+                $this->load->view('admin/template/header');
+                $this->load->view('admin/template/sidebar');
+                $this->load->view('admin/admin/index');
+                $this->load->view('admin/template/footer');
+            }
+        } else {
+            echo $this->session->set_flashdata('msg', 'Username or Password is Wrong');
+            redirect('auth');
+        }
     }
     public function registration()
     {
@@ -69,6 +101,13 @@ class auth extends CI_Controller
         }
     }
 
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        $this->load->view('auth/header');
+        $this->load->view('auth/login');
+        $this->load->view('auth/footer');
+    }
     // {
     //     $this->load->view('auth/registration');
     //     $this->load->view('auth/footer');
