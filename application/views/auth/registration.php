@@ -2,8 +2,12 @@
 
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </head>
 
@@ -31,31 +35,42 @@
 
                         <div class='row'>
                             <div class='input-field col s12'>
-                                <input class='validate' type='text' name='nama' id='nama' />
-                                <label for='nama'>Masukkan Nama Anda</label>
+                                <input class='validate' type='text' name='nama_mhs' id='nama_mhs' />
+                                <label for='nama' value="<?= set_value('nama_mhs'); ?>">Masukkan Nama Anda</label>
+                                <?= form_error('nama_mhs', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
                         </div>
 
                         <div class='row'>
                             <div class='input-field col s12'>
-                                <input class='validate' type='text' name='npm' id='npm' />
+                                <input class='validate' type='text' name='npm' id='npm' value="<?= set_value('npm'); ?>" />
                                 <label for='npm'>Masukkan Npm Anda</label>
+                                <?= form_error('npm', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
                         </div>
 
                         <div class='row'>
                             <div class='input-field col s12'>
-                                <input class='validate' type='email' name='email' id='email' />
+                                <input class='validate' type='email' name='email' id='email' value="<?= set_value('email'); ?>" />
                                 <label for='email'>Enter your email</label>
+                                <?= form_error('email', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
                         </div>
 
                         <div class='row'>
                             <div class='input-field col s12'>
-                                <input class='validate' type='password' name='password' id='password' />
+                                <input class='validate' type='password' name='password' id='password' value="<?= set_value('password'); ?>" />
                                 <label for='password'>Enter your password</label>
+                                <?= form_error('password', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
+                        </div>
 
+                        <div class='row'>
+                            <div class='input-field col s12'>
+                                <input class='validate' type='password' name='password1' id='password1' />
+                                <label for='password21'>Enter your password</label>
+                                <?= form_error('password', '<small class="text-danger" pl-3>', '</small>'); ?>
+                            </div>
                         </div>
 
                         <br />

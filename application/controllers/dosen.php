@@ -7,4 +7,12 @@ class dosen extends CI_Controller
         $this->load->view('dosen/dashboarddosen');
         $this->load->view('layouts/footer');
     }
+
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        $this->load->view('auth/header');
+        $this->load->view('auth/login');
+        $this->load->view('auth/footer');
+    }
 }
