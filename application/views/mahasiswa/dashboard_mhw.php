@@ -32,42 +32,42 @@
       <div class="row">
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-            <a href="<?= base_url() ?>mahasiswa/kegiatanwirausaha">
+            <a href="<?= base_url() ?>mahasiswa/kegiatan">
               <img src="<?php echo base_url(); ?>/assets/img/icon-kegiatan-wirausaha.png" style="width: 60%;">
             </a>
           </div>
         </div>
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-          <a href="<?= base_url() ?>mahasiswa/magang">
+          <a href="<?= base_url() ?>mahasiswa/kegiatan">
               <img src="<?php echo base_url(); ?>/assets/img/icon-magang.png" style="width: 60%;">
             </a>
           </div>
         </div>
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-          <a href="<?= base_url() ?>mahasiswa/kkn">
+          <a href="<?= base_url() ?>mahasiswa/kegiatan">
               <img src="<?php echo base_url(); ?>/assets/img/icon-membangun-desa.png" style="width: 60%;">
             </a>
           </div>
         </div>
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-          <a href="<?= base_url() ?>mahasiswa/mengajar">
+          <a href="<?= base_url() ?>mahasiswa/kegiatan">
               <img src="<?php echo base_url(); ?>/assets/img/icon-mengajar.png" style="width: 68%;">
             </a>
           </div>
         </div>
         <div class="col s12 m2">
           <div class="card-panel hoverable ">
-            <a href="#">
+            <a href="mahasiswa/kegiatan">
               <img src="<?php echo base_url(); ?>/assets/img/icon-penelitian.png" style="width: 60%;">
             </a>
           </div>
         </div>
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-            <a href="#">
+            <a href="mahasiswa/kegiatan">
               <img src="<?php echo base_url(); ?>/assets/img/icon-proyek-kemanusiaan.png" style="width: 60%;">
             </a>
           </div>
@@ -75,7 +75,7 @@
 
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-            <a href="#">
+            <a href="mahasiswa/kegiatan">
               <img src="<?php echo base_url(); ?>/assets/img/icon-studi-idependen.png" style="width: 60%;">
             </a>
           </div>
@@ -83,7 +83,7 @@
 
         <div class="col s12 m2">
           <div class="card-panel hoverable">
-            <a href="#">
+            <a href="mahasiswa/kegiatan#">
               <img src="<?php echo base_url(); ?>/assets/img/icon-pertukaran-pelajar.png" style="width: 60%;">
             </a>
           </div>

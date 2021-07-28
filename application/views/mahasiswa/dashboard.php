@@ -14,9 +14,14 @@
                      <h6>Program Kegiatan</h6>
                      <select class="browser-default">
 
-                         <option value="1">Pertukaran Pelajar</option>
-                         <option value="2">Option 2</option>
-                         <option value="3">Option 3</option>
+                         <option value="1">Kegiatan Wirausaha</option>
+                         <option value="2">Magang/Praktik Kerja</option>
+                         <option value="3">Membangun Desa / Kuliah Kerja Nyata </option>
+                         <option value="4">Mengajar disekolah </option>
+                         <option value="5">Penelitian/Riset </option>
+                         <option value="6">Proyek kemanusiaan</option>
+                         <option value="7">Studi proyek/Independen </option>
+                         <option value="8">Pertukaran Pelajar </option>
                      </select>
 
                      <div class='input-field col s12'>
@@ -37,7 +42,7 @@
                      <select class="browser-default">
 
                          <option value="1">Perorangan</option>
-                         <option value="2">Option 2</option>
+                         <option value="2">Kelompok</option>
                          <option value="3">Option 3</option>
 
                      </select>
