@@ -52,7 +52,7 @@
                         <div class='row'>
                             <div class='input-field col s12'>
                                 <input class='validate' type='email' name='email' id='email' value="<?= set_value('email'); ?>" />
-                                <label for='email'>Enter your email</label>
+                                <label for='email'>Masukkan Nama Anda</label>
                                 <?= form_error('email', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                         <div class='row'>
                             <div class='input-field col s12'>
                                 <input class='validate' type='password' name='password' id='password' value="<?= set_value('password'); ?>" />
-                                <label for='password'>Enter your password</label>
+                                <label for='password'>Masukkan Password Anda</label>
                                 <?= form_error('password', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                         <div class='row'>
                             <div class='input-field col s12'>
                                 <input class='validate' type='password' name='password1' id='password1' />
-                                <label for='password21'>Enter your password</label>
+                                <label for='password21'>Konfirmasi Password Anda</label>
                                 <?= form_error('password', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
                         </div>

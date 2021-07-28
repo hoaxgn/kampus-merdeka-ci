@@ -41,22 +41,15 @@ class auth extends CI_Controller
             $this->session->set_userdata($sesdata);
             // access login for admin
             if ($role_id === '1') {
-                $this->load->view('mahasiswa/header');
-                $this->load->view('mahasiswa/dashboard_mhw');
+                redirect('Mahasiswa');
                 // redirect('Mahasiswa');
 
                 // access login for staff
             } elseif ($role_id === '2') {
-                $this->load->view('layouts/header');
-                $this->load->view('dosen/dashboarddosen');
-                $this->load->view('layouts/footer');
-
+                redirect('dosen');
                 // access login for author
-            } else {
-                $this->load->view('admin/template/header');
-                $this->load->view('admin/template/sidebar');
-                $this->load->view('admin/admin/index');
-                $this->load->view('admin/template/footer');
+            } elseif ($role_id === '3') {
+                redirect('admin/Admin');
             }
         } else {
             echo $this->session->set_flashdata('msg', 'Username or Password is Wrong');
@@ -86,7 +79,7 @@ class auth extends CI_Controller
             $this->load->view('auth/footer');
         } else {
             $data = [
-                'id_role' => 2,
+                'id_role' => 1,
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'npm' => htmlspecialchars($this->input->post('npm', true)),
                 'nama_mhs' => htmlspecialchars($this->input->post('nama_mhs', true)),
