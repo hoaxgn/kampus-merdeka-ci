@@ -100,6 +100,12 @@
                                 <span>Tentang Kami</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="<?= base_url('auth/logout') ?>">
+                                <i class="material-icons">keyboard_arrow_right</i>
+                                <span>keluar</span>
+                            </a>
+                        </li>
 
                         
                 </div>

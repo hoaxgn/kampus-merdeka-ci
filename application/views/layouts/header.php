@@ -41,6 +41,7 @@
         });
     </script>
     <title>Teknik Informatika</title>
+    <link rel="icon" href="<?= base_url('assets/dash/') ?>logo-header.ico" type="image/x-icon">
 </head>
 
 <body>
