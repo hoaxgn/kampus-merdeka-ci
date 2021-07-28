@@ -13,7 +13,7 @@ class A_dosen extends CI_Model
         $data = [
 
             "nama_dosen" => $this->input->post('nama_dosen', true),
-            "username" => $this->input->post('username', true),
+            "nidn" => $this->input->post('nidn', true),
             "jk" => $this->input->post('jk', true),
             "foto_profil" => $this->input->post('foto_profil', true),
             "email" => $this->input->post('email', true)

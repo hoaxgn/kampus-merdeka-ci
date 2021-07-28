@@ -28,6 +28,7 @@ class ManajemenDosen extends CI_Controller
     {
         $data['judul'] = 'tambah Dosen';
         $this->form_validation->set_rules('nama_dosen', 'Nama_dosen', 'required');
+        $this->form_validation->set_rules('nidn', 'Nidn', 'required');
         $this->form_validation->set_rules('jk', 'Jk', 'required');
         $this->form_validation->set_rules('foto_profil', 'Foto_profil');
         $this->form_validation->set_rules('email', 'Email', 'required');

@@ -16,7 +16,6 @@
 
 
 
-
                             <li class="dropdown">
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">more_vert</i>
@@ -50,7 +49,7 @@
 
                                         <td><?= $dsn['id_dosen']; ?></td>
                                         <td><?= $dsn['nama_dosen']; ?></td>
-                                        <td><?= $dsn['username']; ?></td>
+                                        <td><?= $dsn['nidn']; ?></td>
                                         <td><?= $dsn['jk']; ?></td>
                                         <td><?= $dsn['foto_profil']; ?></td>
                                         <td><?= $dsn['email']; ?></td>
@@ -114,7 +113,7 @@
                             </div>
                             <div class="row clearfix">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                    <label for="username">NIDN</label>
+                                    <label for="nidn">NIDN</label>
                                 </div>
                                 <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                     <div class="form-group">
