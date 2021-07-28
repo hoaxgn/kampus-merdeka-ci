@@ -35,24 +35,24 @@
 
                         <div class='row'>
                             <div class='input-field col s12'>
-                                <input class='validate' type='text' name='nama_mhs' id='nama_mhs' />
-                                <label for='nama' value="<?= set_value('nama_mhs'); ?>">Masukkan Nama Anda</label>
-                                <?= form_error('nama_mhs', '<small class="text-danger" pl-3>', '</small>'); ?>
+                                <input class='validate' type='text' name='nama' id='nama' />
+                                <label for='nama' value="<?= set_value('nama'); ?>">Masukkan Nama Anda</label>
+                                <?= form_error('nama', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
                         </div>
 
                         <div class='row'>
                             <div class='input-field col s12'>
-                                <input class='validate' type='text' name='npm' id='npm' value="<?= set_value('npm'); ?>" />
-                                <label for='npm'>Masukkan Npm Anda</label>
-                                <?= form_error('npm', '<small class="text-danger" pl-3>', '</small>'); ?>
+                                <input class='validate' type='text' name='username' id='username' value="<?= set_value('username'); ?>" />
+                                <label for='username'>Masukkan Npm Anda</label>
+                                <?= form_error('username', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
                         </div>
 
                         <div class='row'>
                             <div class='input-field col s12'>
                                 <input class='validate' type='email' name='email' id='email' value="<?= set_value('email'); ?>" />
-                                <label for='email'>Masukkan Nama Anda</label>
+                                <label for='email'>Masukkan Email Anda</label>
                                 <?= form_error('email', '<small class="text-danger" pl-3>', '</small>'); ?>
                             </div>
                         </div>

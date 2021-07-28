@@ -41,7 +41,6 @@
         });
     </script>
     <title>Teknik Informatika</title>
-    <link rel="icon" href="<?= base_url('assets/dash/') ?>logo-header.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -53,7 +52,10 @@
                 </a>
                 <img src="<?= base_url(); ?>assets/img/avatar-11.png" alt="" class="dropdown-trigger right" data-target="dropdown2" style="width: 50px; margin-right: 50px; margin-top: 25px;">
             </div>
-
+            <ul id='dropdown2' class='dropdown-content'>
+                <li><a href="#!">Account</a></li>
+                <li><a href="<?= base_url('auth/logout') ?>">Logout</a></li>
+            </ul>
         </div>
     </section>
     <!-- Navbar -->
