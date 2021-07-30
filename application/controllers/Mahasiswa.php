@@ -8,11 +8,11 @@ class Mahasiswa extends CI_Controller
         $this->load->view('mahasiswa/header');
         $this->load->view('mahasiswa/dashboard_mhw');
     }
-    // public function dashboard()
-    // {
-    //     $this->load->view('mahasiswa/header');
-    //     $this->load->view('mahasiswa/dashboard');
-    // }
+    public function dashboard()
+    {
+        $this->load->view('mahasiswa/header');
+        $this->load->view('mahasiswa/dashboard');
+    }
     public function password()
     {
         $this->load->view('mahasiswa/header');
@@ -81,6 +81,12 @@ class Mahasiswa extends CI_Controller
     {
         $this->load->view('mahasiswa/header');
         $this->load->view('mahasiswa/dashboard');
+    }
+
+    public function dashboard_disable()
+    {
+        $this->load->view('mahasiswa/header');
+        $this->load->view('mahasiswa/dashboard_disable');
     }
     // public function magang()
     // {
